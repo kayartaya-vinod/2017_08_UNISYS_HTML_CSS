@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML5 demo</title>
+	<meta name="viewport" content="width=device-width">
+	<style type="text/css">
+		div#videos > video {
+			height: 200px;
+		}
+	</style>
+
+	<!-- MIME = Multipart Internet Mail Extension -->
+	<script type="text/javascript">
+		function init(){
+			var videos = document.querySelectorAll("div#videos > video");
+			videos.forEach(function(v1){
+				v1.onmouseenter = function(){
+					v1.play();
+				};
+				v1.onmouseout = function(){
+					v1.pause();
+				};
+			});
+		}
+
+		window.onload = init;
+
+	</script>
+</head>
+<body>
+	<audio src="" autoplay></audio>
+	<h1>HTML5 demo</h1>
+	<h2>Html5 Video tags</h2>
+	<hr>
+
+	<img id="tampa" src="./assets/images/tampa.jpg" />
+	<button id="btnFS">Fullscreen</button>
+
+	<script type="text/javascript">
+		img1 = document.querySelector("#tampa");
+		btn1 = document.getElementById("btnFS");
+
+		btn1.onclick=function(){
+			if(img1.webkitRequestFullScreen){
+				img1.webkitRequestFullScreen();
+			}
+			else if(img1.mozRequestFullScreen){
+				img1.mozRequestFullScreen();
+			}
+			else if(img1.requestFullScreen){
+				img1.requestFullScreen();
+			}
+		};
+
+		
+	</script>
+
+	<div id="videos">
+		<video controls autoplay>
+			<source src="./assets/videos/billy.mp4" type="video/mp4">
+			<track label="English subtitles" kind="subtitles" srclang="en"
+         src="test.vtt" default />
+			<h3>Your browser does not support the video tag!</h3>
+		</video>
+
+		<video controls>
+			<source src="./assets/videos/baby-and-dog.mp4" type="video/mp4">
+			<h3>Your browser does not support the video tag!</h3>
+		</video>
+
+		<video controls>
+			<source src="./assets/videos/burningtruck.mp4" type="video/mp4">
+			<h3>Your browser does not support the video tag!</h3>
+		</video>
+	</div>
+
+</body>
+</html>

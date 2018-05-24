@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap carousel demo</title>
+	<meta content="width=device-width" name="viewport">
+
+	<link rel="stylesheet" type="text/css" 
+		href="assets/thirdparty/bootstrap/css/bootstrap.min.css">
+
+	<script type="text/javascript"
+		src="assets/thirdparty/jquery/jquery.min.js"></script>
+		
+	<script type="text/javascript"
+		src="assets/thirdparty/bootstrap/js/bootstrap.min.js"></script>
+
+	<style type="text/css">
+		div#carousel1 {
+			width: 800px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Bootstrap carousel demo</h1>
+
+
+		<hr>
+
+		<div id="carousel1" class="carousel slide" data-ride="carousel">
+			
+			<!-- carousel indicators -->
+			<ol class="carousel-indicators">
+				<li data-slide-to="0" data-target="#carousel1"></li>
+				<li data-slide-to="1" data-target="#carousel1"></li>
+				<li data-slide-to="2" data-target="#carousel1"></li>
+				<li data-slide-to="3" data-target="#carousel1"></li>
+			</ol>
+
+
+			<!-- wrapper for the slides / images -->
+			<div class="carousel-inner">
+				<!-- slide#1 -->
+				<div class="item active">
+					<img class="img img-thumbnail" src="assets/images/puppy.jpg">
+				</div>
+				<!-- slide#2 -->
+				<div class="item">
+					<img class="img img-thumbnail" src="assets/images/giraffe.jpg">
+				</div>
+				<!-- slide#3 -->
+				<div class="item">
+					<img class="img img-thumbnail" src="assets/images/pig.jpg">
+				</div>
+				<!-- slide#4 -->
+				<div class="item">
+					<img class="img img-thumbnail" src="assets/images/deer.jpg">
+				</div>
+			</div>
+
+			<!-- slide naviation left/right controls -->
+			<a href="#carousel1"
+				class="left carousel-control" data-slide="prev">
+				<span class="glyphicon glyphicon-cheveron-left"></span>
+			</a>
+			<a href="#carousel1"
+				class="right carousel-control" data-slide="next">
+				<span class="glyphicon glyphicon-cheveron-right"></span>
+			</a>
+		</div>
+
+	</div>
+</body>
+</html>
+
+
+
+
+

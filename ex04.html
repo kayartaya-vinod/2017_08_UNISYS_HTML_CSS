@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+
+		.box {
+			width: 250px;
+			height: 250px;
+			border: 1px solid black;
+			display: inline-block;
+			margin: 20px;
+		}
+
+		#d1 {
+			border-radius: 15px;
+			box-shadow: 15px -15px 0 #bbb;
+		}
+
+		#d2 {
+			width: 300px;
+			border-radius: 15px 25px;
+			background-image: url(./assets/images/cake.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		#d3 {
+			border-radius: 50%;
+		}
+		#tampa {
+			border-radius: 50%;
+			box-shadow: 0 0 30px yellow;
+		}
+
+		#d4 {
+			border-width: 30px;
+			-webkit-border-image: url(./assets/images/border_image_2.png) 20% stretch;
+			-moz-border-image: url(./assets/images/border_image_2.png) 20% stretch;
+			-ms-border-image: url(./assets/images/border_image_2.png) 20% stretch;
+			border-image: url(./assets/images/border_image_2.png) 20% stretch;
+		}
+
+		#d5 {
+			background-image: linear-gradient(to right, red, yellow);
+		}
+		#d6 {
+			background-image: linear-gradient(violet, indigo, blue, green, yellow, orange, red);
+		}
+
+		#d7 {
+			position: relative;
+			left: -300px;
+			background-image: linear-gradient(to right, rgba(255, 255, 255, 0), red);
+		}
+
+		#d8 {
+			background: repeating-linear-gradient(red, yellow 10%, green 10%);
+		}
+
+
+		#d9 {
+			width: 500px;
+			/*background-image: radial-gradient(red, yellow);*/
+			/*background-image: radial-gradient(circle, red, yellow);*/
+			background-image: radial-gradient(closest-side at 200px 100px, red, yellow);
+		}
+	</style>
+</head>
+<body>
+
+	<h1>CSS3 demos</h1>
+
+	<div id="d1" class="box"></div>
+	<div id="d2" class="box"></div>
+	<div id="d3" class="box"></div>
+	<div id="d4" class="box"></div>
+	<div id="d5" class="box"></div>
+	
+	<div id="d6" class="box"></div>
+
+	<div></div>
+
+	<div class="box">This is a test div content. This is a test div content. This is a test div content. This is a test div content. This is a test div content. This is a test div content. This is a test div content. This is a test div content. This is a test div content. </div>
+	<div id="d7" class="box"></div>
+	
+	<div id="d8" class="box"></div>
+	<div id="d9" class="box"></div>
+
+
+
+	<img src="./assets/images/tampa.jpg" id="tampa">
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS3 Transitions</title>
+
+	<style type="text/css">
+		body {
+			margin: 0;
+			padding: 50px;
+		}
+		#tampa1 {
+			transform: rotate(-180deg);
+			transition: all 250ms ease-in;
+			opacity: .2;
+		}
+		#tampa1:hover {
+			transform: scale(1.5) rotate(0deg);
+			opacity: 1;
+		}
+
+		h1 {
+			color: black;
+			background: white;
+			transition: all 550ms ease-in-out;
+		}
+
+		h1:hover {
+			font-size: 45pt;
+			color: white;
+			background: black;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS3 Transitions Demo</h1>
+	<img src="assets/images/tampa.jpg" id="tampa1">
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS3 Custom Animation</title>
+
+	<style type="text/css">
+
+	
+		/* define the animation called "spin" */
+		@keyframes spin {
+			0% { transform: scale(.3); }
+			50% { transform: translateX(200px) translateY(200px) scale(1) rotate(180deg); }
+			100% { transform: scale(.3); }
+		}
+
+		/* define the frames for the shakeEffect */
+		@keyframes shakeEffect {
+			0% { transform: translateX(0px) rotate(0deg); }
+			33% { transform: translateX(30px) rotate(45deg); }
+			66% { transform: translateX(-30px) rotate(-45deg); }
+			100% { transform: translateX(0px) rotate(0deg); }
+		}
+	
+		#tampa {
+			animation: spin 1s 3 ease-in-out;
+		}
+
+		.shake {
+			animation: shakeEffect 200ms 3;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>CSS3 Custom Animations</h1>
+	<hr>
+	
+	<!-- <img src="assets/images/tampa.jpg" id="tampa"> -->
+	
+	<img src="assets/images/cake.jpg" id="cake">
+
+	<script type="text/javascript">
+		var elem = document.getElementById("cake");
+		elem.onclick = function(evt){
+			var obj = evt.target; 
+			if(obj.className == "shake"){
+				obj.className = "";
+			}
+			else {
+				obj.className = "shake";
+			}
+		};
+	</script>
+
+
+</body>
+</html>
+
+
+
+
+
+

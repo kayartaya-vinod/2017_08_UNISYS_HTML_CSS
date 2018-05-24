@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML5 demos</title>
+	<style type="text/css">
+		h1:hover {
+			color: red;
+		}
+
+		input:invalid {
+			border: 1px solid red;
+		}
+	</style>
+</head>
+<body>
+	<h1>HTML5 demos</h1>
+	<h2>Form types</h2>
+
+	<hr>
+	
+	<!--
+	form#f1>(div>input[type=text][required][name=username])+(div>button{Submit})
+	-->
+
+	<form>
+		<div>
+			<input type="text" required minlength="5" 
+				placeholder="Enter username" 
+				pattern="[a-zA-Z][a-zA-Z0-9]{4,9}"
+				name="username" maxlength="10">
+		</div>	
+
+		<div>
+			<input type="email" placeholder="Enter your email">
+		</div>
+
+		<div>
+			<input type="date" name="dob"
+				placeholder="Enter your date of birth" 
+				value="1974-01-20"
+				min="1964-01-01"
+				max="2002-12-31">
+		</div>
+
+		<div>
+			<input type="range" name="brightness" id="brightness"
+				min="0" max="100" value="20">
+		</div>
+
+		<div>
+			<input type="color" id="bgColor" value="#234">
+		</div>
+
+		<div>
+			<button>Submit</button>
+		</div>
+	</form>
+</body>
+</html>
+
+
+
+
+
